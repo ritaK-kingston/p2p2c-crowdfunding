@@ -1,4 +1,3 @@
-Below is an updated **README.md** example, reflecting the requested changes:
 
 ---
 
