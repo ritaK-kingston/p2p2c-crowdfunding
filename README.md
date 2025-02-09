@@ -1,4 +1,4 @@
-Below is an **example** of a revised `README.md` that includes the points you requested. Feel free to customize the text as needed.
+Below is an updated **README.md** example, reflecting the requested changes:
 
 ---
 
@@ -6,20 +6,21 @@ Below is an **example** of a revised `README.md` that includes the points you re
 
 This repository contains two main scripts designed to interface with the [JustGiving](https://www.justgiving.com/) API. The **search** script fetches active crowdfunding project data and stores it in a PostgreSQL database. The **analysis** script then reads this database and applies a thematic/categorical sentiment analysis to the fetched stories.
 
-> **Note**: According to JustGiving’s API documentation and permissions, only **currently active** crowdfunding projects are returned. Historical (closed) projects are typically **not** accessible via the JustGiving APIs.
+> **Note**: According to JustGiving’s API documentation and permissions, only **currently active** crowdfunding projects are returned. Historical (closed) projects are **not** accessible via the JustGiving APIs.
 
 ---
 
 ## 1. Prerequisites
 
 - **Python**: 3.12.7  
-  (Other 3.x versions may work, but the code is tested using 3.12.7.)
-- **PostgreSQL**: Any modern version (e.g., 13+)
+  (Other 3.x versions may work, but the code is tested on 3.12.7.)
+- **PostgreSQL**: 15.10  
+  (Older versions may work, but it has been tested on 15.10.)
 - **Git**: Optional, for cloning the repository.
 
 ### 1.1 Python Dependencies
 
-Each script folder (`search` and `analysis`) contains its own `requirements.txt` file to specify needed Python packages. Please refer to the [Installation](#installation) section below on how to install them.
+Each script folder (`search` and `analysis`) contains its own `requirements.txt` file to specify needed Python packages. Refer to the [Installation](#installation) section below on how to install them.
 
 ---
 
@@ -55,12 +56,12 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
    - Ensures two tables exist:  
      - `query_state` for storing partial/resume data about ongoing queries.  
      - `crowdfunding` for storing the actual project details (in JSONB).  
-2. **Queries the JustGiving API** with small letter or user-defined queries to find fundraising pages (crowdfunding projects).  
+2. **Queries the JustGiving API** using small letter or user-defined queries to find fundraising pages (crowdfunding projects).  
 3. **Paginates** through results (up to a max page limit or total pages found).  
 4. **Stores** each found page’s details by “short_name” as a unique key in `crowdfunding` table.  
 5. **Resumes** seamlessly if interrupted, by checking `query_state`. If the script is re-run, it continues where it left off or starts fresh if needed.  
 
-**Important**: You must supply a valid **JustGiving App ID** (and possibly a personal access token if required) via environment variables or direct script configuration. The search script will only return **active** crowdfunding pages, since JustGiving’s API does not expose closed campaigns.
+> **Important**: You must supply a valid **JustGiving App ID** (and possibly a personal access token if required) via environment variables or direct script configuration. The search script will only return **active** crowdfunding pages, since JustGiving’s API does not expose closed campaigns.
 
 ### 3.2 The Analysis Script (sentiment_analysis.py)
 
@@ -70,7 +71,7 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 4. **Applies TF-IDF** vectorization to find relevant keywords based on a dictionary of themes and categories (e.g., “Proximity,” “Self-Gain,” etc.).  
 5. **Aggregates** scores at both the category and theme level.  
 6. **Normalizes** scores for clearer comparisons.  
-7. **Generates** a variety of output:  
+7. **Generates** a variety of outputs:  
    - **Rankings** of themes and categories based on average TF-IDF weights.  
    - **Plots** (bar charts, heatmaps, etc.).  
    - **CSV** file containing the final dataset with normalized scores.  
@@ -82,7 +83,7 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 ### 4.1 Database Creation
 
-1. **Install PostgreSQL** on your system (if not already installed).
+1. **Install PostgreSQL** 15.10 on your system (if not already installed).
 2. **Create a database**. For example, open a terminal and run:
    ```bash
    createdb justgivingdb
@@ -179,7 +180,7 @@ This will:
 3. Store each project record in the `crowdfunding` table in JSONB format.
 
 **Optional** arguments:
-- `--reset-state`: Clears only the `query_state` table, allowing you to restart search from scratch without losing the existing project data.
+- `--reset-state`: Clears only the `query_state` table, allowing you to restart the search from scratch without losing the existing project data.
 
 ### 6.2 Running the Analysis Script
 
@@ -222,8 +223,10 @@ This will:
 
 ## 9. License
 
-*(Choose a suitable open-source license if you want to share publicly, e.g., MIT.)*
+This project is licensed under the [Apache License 2.0](LICENSE).
+
+You are free to use, modify, and distribute this project in accordance with the terms of the license.
 
 ---
 
-Happy coding! If you encounter any issues or have feature requests, please open an issue on the repository.
+**Happy coding!** If you encounter any issues or have feature requests, please open an issue in the repository.
