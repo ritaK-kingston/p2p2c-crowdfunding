@@ -226,7 +226,7 @@ This project is licensed under the [Apache License 2.0](LICENSE).
 
 You are free to use, modify, and distribute this project in accordance with the terms of the license.
 
-**Please note:** This source and description was created with the assistance of ChatGPT o1. 
+**Please note:** This source code and description was created with the assistance of ChatGPT o1. 
 
 ---
 
