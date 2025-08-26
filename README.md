@@ -46,9 +46,44 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 ---
 
-## 3. How the Scripts Work
+## 3. Sentiment Analysis Themes and Keywords
 
-### 3.1 The Search Script (justgiving_search.py)
+The analysis script uses a comprehensive dictionary of themes, categories, and keywords to categorize crowdfunding stories. Here's the complete taxonomy:
+
+### 3.1 Proximity Theme
+**Close to the Heart:**
+- personal trauma, loss, memory of, dedicated to, personal connection, close to my heart, affected by, family, friend, loved one, in memory, because of my experience with, after losing, after experiencing, significant to me, means a lot to me, in honour of, in loving memory, tribute to, in memory of
+
+**Close to Home:**
+- local, community, neighborhood, near me, close to home, in my area, local school, local hospital, supporting local, our town, our city, benefits my community, nearby, close by, local community, local cause, help our area, helping locally, our region, local initiative
+
+### 3.2 Self-Gain Theme
+**Social Standing:**
+- social status, social recognition, identity expression, social media, share, post, like, follow, support me, raise awareness, get the word out, trend, viral, identity, brand, followers, praise, reputation, public image, prestige, kudos, networking, visibility, social influence, popularity
+
+**Personal Development:**
+- personal growth, learn, develop, improve myself, challenge myself, self-improvement, gain experience, skills, new abilities, transformative, journey, overcome, personal journey, self-discovery, grow as a person, better myself, achieve my goals, personal development, self-fulfillment, aspiration
+
+**Seeking Experiences:**
+- fun, enjoy, experience, exciting, adventure, challenge, marathon, hike, skydiving, activity, event, participate in, enjoyment, recreational, pleasure, once in a lifetime, exciting opportunity, thrill, fun run, recreational activity, enjoyable experience, memorable, leisure, festive, celebration
+
+### 3.3 Empowerment Theme
+**Stewardship:**
+- control, direct impact, transparency, efficiency, effective altruism, manage, oversee, ensure, utilize resources effectively, stewardship, maximizing impact, evidence-based, make sure, responsibility, efficient use, accountability, ensure funds are used properly, allocate resources, direct involvement, trustworthy, responsible giving, efficient management, maximize effectiveness
+
+**Advocacy:**
+- advocate, campaign, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, change, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up
+
+### 3.4 Moral Purpose Theme
+**Religious Affiliation:**
+- faith, god, church, blessed, prayer, mission, ministry, religious, bible, spiritual, divine, grace, christian, islam, muslim, jewish, hindu, buddhist, religion, blessing, holy, worship, belief, devotion, religious duty
+
+**Moral Obligation:**
+- duty, obligation, responsibility, ought to, should, moral, ethics, justice, empathy, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, must help, moral duty, ethically, it's right, moral responsibility, obliged, commitment, moral imperative, sense of duty
+
+## 4. How the Scripts Work
+
+### 4.1 The Search Script (justgiving_search.py)
 
 1. **Setup**:  
    - Connects to the PostgreSQL database (`justgivingdb` by default).  
@@ -62,7 +97,7 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 > **Important**: You must supply a valid **JustGiving App ID** (and possibly a personal access token if required) via environment variables or direct script configuration. The search script will only return **active** crowdfunding pages, since JustGiving’s API does not expose closed campaigns.
 
-### 3.2 The Analysis Script (sentiment_analysis.py)
+### 4.2 The Analysis Script (sentiment_analysis.py)
 
 1. **Fetches** data from the `crowdfunding` table (using conditions like `activityCharityCreated=false` and `activityType=CharityAppeal`).  
 2. **Cleans** each story (removing HTML, URLs, etc.).  
@@ -78,9 +113,9 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 ---
 
-## 4. Creating the PostgreSQL Database & Schema
+## 5. Creating the PostgreSQL Database & Schema
 
-### 4.1 Database Creation
+### 5.1 Database Creation
 
 1. **Install PostgreSQL** 15.10 on your system (if not already installed).
 2. **Create a database**. For example, open a terminal and run:
@@ -102,7 +137,7 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
    GRANT ALL PRIVILEGES ON DATABASE justgivingdb TO justgiving;
    ```
 
-### 4.2 Creating Tables
+### 5.2 Creating Tables
 
 Both scripts will automatically create tables if they don’t exist. However, you can pre-create them in `psql`:
 
@@ -126,7 +161,7 @@ CREATE TABLE IF NOT EXISTS crowdfunding (
 
 ---
 
-## 5. Installation
+## 6. Installation
 
 1. **Clone the repository** (or download the source):
    ```bash
@@ -163,9 +198,9 @@ CREATE TABLE IF NOT EXISTS crowdfunding (
 
 ---
 
-## 6. Usage
+## 7. Usage
 
-### 6.1 Running the Search Script
+### 7.1 Running the Search Script
 
 ```bash
 cd search
@@ -181,7 +216,7 @@ This will:
 **Optional** arguments:
 - `--reset-state`: Clears only the `query_state` table, allowing you to restart the search from scratch without losing the existing project data.
 
-### 6.2 Running the Analysis Script
+### 7.2 Running the Analysis Script
 
 ```bash
 cd ../analysis
@@ -201,7 +236,7 @@ This will:
 
 ---
 
-## 7. Notes & Limitations
+## 8. Notes & Limitations
 
 - **Active Campaigns Only**: JustGiving’s API does not provide historical (closed) crowdfunding projects, so this workflow **cannot retrieve** data for ended/expired campaigns.
 - **Customization**:  
@@ -213,14 +248,14 @@ This will:
 
 ---
 
-## 8. Contributing
+## 9. Contributing
 
 1. Fork the repo and create a new branch for your feature or bugfix.
 2. Submit a pull request with a clear explanation of changes.
 
 ---
 
-## 9. License
+## 10. License
 
 This project is licensed under the [Apache License 2.0](LICENSE).
 
