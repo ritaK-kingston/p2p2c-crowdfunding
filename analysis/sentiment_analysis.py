@@ -86,7 +86,7 @@ themes = {
             'responsible giving', 'efficient management', 'maximize effectiveness'
         ],
         'Advocacy': [
-            'advocate', 'campaign', 'raise awareness', 'speak out', 'voice', 'visibility',
+            'advocate', 'raise awareness', 'speak out', 'voice', 'visibility',
             'marginalized', 'social movement', 'make a difference', 'change', 'policy', 'activism',
             'fight for', 'supporting cause', 'urge', 'petition', 'social justice', 'stand up for',
             'protest', 'equality', 'human rights', 'advocacy', 'take action', 'speak up'
@@ -99,7 +99,7 @@ themes = {
             'buddhist', 'religion', 'blessing', 'holy', 'worship', 'belief', 'devotion', 'religious duty'
         ],
         'Moral Obligation': [
-            'duty', 'obligation', 'responsibility', 'ought to', 'should', 'moral', 'ethics', 'justice',
+            'duty', 'obligation', 'responsibility', 'ought to', 'moral', 'ethics', 'justice',
             'empathy', 'altruism', 'help others', 'do the right thing', 'humanity', 'compassion',
             'conscience', 'feel compelled', 'must help', 'moral duty', 'ethically', "it's right",
             'moral responsibility', 'obliged', 'commitment', 'moral imperative', 'sense of duty'
@@ -146,11 +146,11 @@ def clean_text(text):
     # Remove HTML tags
     text = re.sub(r'<[^>]+>', '', text)
     # Remove HTML character entities
-    text = re.sub(r'&\\w+;', '', text)
+    text = re.sub(r'&\w+;', '', text)
     # Remove URLs
-    text = re.sub(r'http\\S+', '', text)
+    text = re.sub(r'http\S+', '', text)
     # Remove extra whitespace
-    text = re.sub(r'\\s+', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
 stop_words = set(stopwords.words('english'))

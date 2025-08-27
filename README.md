@@ -72,14 +72,14 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 - control, direct impact, transparency, efficiency, effective altruism, manage, oversee, ensure, utilize resources effectively, stewardship, maximizing impact, evidence-based, make sure, responsibility, efficient use, accountability, ensure funds are used properly, allocate resources, direct involvement, trustworthy, responsible giving, efficient management, maximize effectiveness
 
 **Advocacy:**
-- advocate, campaign, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, change, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up
+- advocate, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, change, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up
 
 ### 3.4 Moral Purpose Theme
 **Religious Affiliation:**
 - faith, god, church, blessed, prayer, mission, ministry, religious, bible, spiritual, divine, grace, christian, islam, muslim, jewish, hindu, buddhist, religion, blessing, holy, worship, belief, devotion, religious duty
 
 **Moral Obligation:**
-- duty, obligation, responsibility, ought to, should, moral, ethics, justice, empathy, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, must help, moral duty, ethically, it's right, moral responsibility, obliged, commitment, moral imperative, sense of duty
+- duty, obligation, responsibility, ought to, moral, ethics, justice, empathy, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, must help, moral duty, ethically, it's right, moral responsibility, obliged, commitment, moral imperative, sense of duty
 
 ## 4. How the Scripts Work
 
