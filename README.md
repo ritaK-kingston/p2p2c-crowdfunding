@@ -48,275 +48,232 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 ## 3. Sentiment Analysis Themes and Keywords
 
-The analysis script uses a comprehensive dictionary of themes, categories, and keywords to categorize crowdfunding stories. The taxonomy is presented below as single-column tables per category. Each table's first row is the Theme name, the second row is the Category name, and the remaining rows list one Keyword per row.
+The analysis script uses a comprehensive dictionary of themes, categories, and keywords to categorize crowdfunding stories. The taxonomy is presented below as tables per theme. Each row shows the Category and a single Keyword.
 
-### Proximity — Close to the Heart
+### Proximity
 
-| Value |
-| --- |
-| Proximity |
-| Close to the Heart |
-| personal trauma |
-| loss |
-| memory of |
-| dedicated to |
-| personal connection |
-| close to my heart |
-| affected by |
-| family |
-| friend |
-| loved one |
-| in memory |
-| because of my experience with |
-| after losing |
-| after experiencing |
-| significant to me |
-| means a lot to me |
-| in honour of |
-| in loving memory |
-| tribute to |
-| in memory of |
+| Category | Keyword |
+| --- | --- |
+| Close to the Heart | personal trauma |
+| Close to the Heart | loss |
+| Close to the Heart | memory of |
+| Close to the Heart | dedicated to |
+| Close to the Heart | personal connection |
+| Close to the Heart | close to my heart |
+| Close to the Heart | affected by |
+| Close to the Heart | family |
+| Close to the Heart | friend |
+| Close to the Heart | loved one |
+| Close to the Heart | in memory |
+| Close to the Heart | because of my experience with |
+| Close to the Heart | after losing |
+| Close to the Heart | after experiencing |
+| Close to the Heart | significant to me |
+| Close to the Heart | means a lot to me |
+| Close to the Heart | in honour of |
+| Close to the Heart | in loving memory |
+| Close to the Heart | tribute to |
+| Close to the Heart | in memory of |
+| Close to Home | local |
+| Close to Home | community |
+| Close to Home | neighborhood |
+| Close to Home | near me |
+| Close to Home | close to home |
+| Close to Home | in my area |
+| Close to Home | local school |
+| Close to Home | local hospital |
+| Close to Home | supporting local |
+| Close to Home | our town |
+| Close to Home | our city |
+| Close to Home | benefits my community |
+| Close to Home | nearby |
+| Close to Home | close by |
+| Close to Home | local community |
+| Close to Home | local cause |
+| Close to Home | help our area |
+| Close to Home | helping locally |
+| Close to Home | our region |
+| Close to Home | local initiative |
 
-### Proximity — Close to Home
+### Self-Gain
 
-| Value |
-| --- |
-| Proximity |
-| Close to Home |
-| local |
-| community |
-| neighborhood |
-| near me |
-| close to home |
-| in my area |
-| local school |
-| local hospital |
-| supporting local |
-| our town |
-| our city |
-| benefits my community |
-| nearby |
-| close by |
-| local community |
-| local cause |
-| help our area |
-| helping locally |
-| our region |
-| local initiative |
+| Category | Keyword |
+| --- | --- |
+| Social Standing | social status |
+| Social Standing | social recognition |
+| Social Standing | identity expression |
+| Social Standing | social media |
+| Social Standing | share |
+| Social Standing | post |
+| Social Standing | like |
+| Social Standing | follow |
+| Social Standing | support me |
+| Social Standing | raise awareness |
+| Social Standing | get the word out |
+| Social Standing | trend |
+| Social Standing | viral |
+| Social Standing | identity |
+| Social Standing | brand |
+| Social Standing | followers |
+| Social Standing | praise |
+| Social Standing | reputation |
+| Social Standing | public image |
+| Social Standing | prestige |
+| Social Standing | kudos |
+| Social Standing | networking |
+| Social Standing | visibility |
+| Social Standing | social influence |
+| Social Standing | popularity |
+| Personal Development | personal growth |
+| Personal Development | learn |
+| Personal Development | develop |
+| Personal Development | improve myself |
+| Personal Development | challenge myself |
+| Personal Development | self-improvement |
+| Personal Development | gain experience |
+| Personal Development | skills |
+| Personal Development | new abilities |
+| Personal Development | transformative |
+| Personal Development | journey |
+| Personal Development | overcome |
+| Personal Development | personal journey |
+| Personal Development | self-discovery |
+| Personal Development | grow as a person |
+| Personal Development | better myself |
+| Personal Development | achieve my goals |
+| Personal Development | personal development |
+| Personal Development | self-fulfillment |
+| Personal Development | aspiration |
+| Seeking Experiences | fun |
+| Seeking Experiences | enjoy |
+| Seeking Experiences | experience |
+| Seeking Experiences | exciting |
+| Seeking Experiences | adventure |
+| Seeking Experiences | challenge |
+| Seeking Experiences | marathon |
+| Seeking Experiences | hike |
+| Seeking Experiences | skydiving |
+| Seeking Experiences | activity |
+| Seeking Experiences | event |
+| Seeking Experiences | participate in |
+| Seeking Experiences | enjoyment |
+| Seeking Experiences | recreational |
+| Seeking Experiences | pleasure |
+| Seeking Experiences | once in a lifetime |
+| Seeking Experiences | exciting opportunity |
+| Seeking Experiences | thrill |
+| Seeking Experiences | fun run |
+| Seeking Experiences | recreational activity |
+| Seeking Experiences | enjoyable experience |
+| Seeking Experiences | memorable |
+| Seeking Experiences | leisure |
+| Seeking Experiences | festive |
+| Seeking Experiences | celebration |
 
-### Self-Gain — Social Standing
+### Empowerment
 
-| Value |
-| --- |
-| Self-Gain |
-| Social Standing |
-| social status |
-| social recognition |
-| identity expression |
-| social media |
-| share |
-| post |
-| like |
-| follow |
-| support me |
-| raise awareness |
-| get the word out |
-| trend |
-| viral |
-| identity |
-| brand |
-| followers |
-| praise |
-| reputation |
-| public image |
-| prestige |
-| kudos |
-| networking |
-| visibility |
-| social influence |
-| popularity |
+| Category | Keyword |
+| --- | --- |
+| Stewardship | control |
+| Stewardship | direct impact |
+| Stewardship | transparency |
+| Stewardship | efficiency |
+| Stewardship | effective altruism |
+| Stewardship | manage |
+| Stewardship | oversee |
+| Stewardship | ensure |
+| Stewardship | utilize resources effectively |
+| Stewardship | stewardship |
+| Stewardship | maximizing impact |
+| Stewardship | evidence-based |
+| Stewardship | make sure |
+| Stewardship | responsibility |
+| Stewardship | efficient use |
+| Stewardship | accountability |
+| Stewardship | ensure funds are used properly |
+| Stewardship | allocate resources |
+| Stewardship | direct involvement |
+| Stewardship | trustworthy |
+| Stewardship | responsible giving |
+| Stewardship | efficient management |
+| Stewardship | maximize effectiveness |
+| Advocacy | advocate |
+| Advocacy | raise awareness |
+| Advocacy | speak out |
+| Advocacy | voice |
+| Advocacy | visibility |
+| Advocacy | marginalized |
+| Advocacy | social movement |
+| Advocacy | make a difference |
+| Advocacy | change |
+| Advocacy | policy |
+| Advocacy | activism |
+| Advocacy | fight for |
+| Advocacy | supporting cause |
+| Advocacy | urge |
+| Advocacy | petition |
+| Advocacy | social justice |
+| Advocacy | stand up for |
+| Advocacy | protest |
+| Advocacy | equality |
+| Advocacy | human rights |
+| Advocacy | advocacy |
+| Advocacy | take action |
+| Advocacy | speak up |
 
-### Self-Gain — Personal Development
+### Moral Purpose
 
-| Value |
-| --- |
-| Self-Gain |
-| Personal Development |
-| personal growth |
-| learn |
-| develop |
-| improve myself |
-| challenge myself |
-| self-improvement |
-| gain experience |
-| skills |
-| new abilities |
-| transformative |
-| journey |
-| overcome |
-| personal journey |
-| self-discovery |
-| grow as a person |
-| better myself |
-| achieve my goals |
-| personal development |
-| self-fulfillment |
-| aspiration |
-
-### Self-Gain — Seeking Experiences
-
-| Value |
-| --- |
-| Self-Gain |
-| Seeking Experiences |
-| fun |
-| enjoy |
-| experience |
-| exciting |
-| adventure |
-| challenge |
-| marathon |
-| hike |
-| skydiving |
-| activity |
-| event |
-| participate in |
-| enjoyment |
-| recreational |
-| pleasure |
-| once in a lifetime |
-| exciting opportunity |
-| thrill |
-| fun run |
-| recreational activity |
-| enjoyable experience |
-| memorable |
-| leisure |
-| festive |
-| celebration |
-
-### Empowerment — Stewardship
-
-| Value |
-| --- |
-| Empowerment |
-| Stewardship |
-| control |
-| direct impact |
-| transparency |
-| efficiency |
-| effective altruism |
-| manage |
-| oversee |
-| ensure |
-| utilize resources effectively |
-| stewardship |
-| maximizing impact |
-| evidence-based |
-| make sure |
-| responsibility |
-| efficient use |
-| accountability |
-| ensure funds are used properly |
-| allocate resources |
-| direct involvement |
-| trustworthy |
-| responsible giving |
-| efficient management |
-| maximize effectiveness |
-
-### Empowerment — Advocacy
-
-| Value |
-| --- |
-| Empowerment |
-| Advocacy |
-| advocate |
-| raise awareness |
-| speak out |
-| voice |
-| visibility |
-| marginalized |
-| social movement |
-| make a difference |
-| change |
-| policy |
-| activism |
-| fight for |
-| supporting cause |
-| urge |
-| petition |
-| social justice |
-| stand up for |
-| protest |
-| equality |
-| human rights |
-| advocacy |
-| take action |
-| speak up |
-
-### Moral Purpose — Religious Affiliation
-
-| Value |
-| --- |
-| Moral Purpose |
-| Religious Affiliation |
-| faith |
-| god |
-| church |
-| blessed |
-| prayer |
-| mission |
-| ministry |
-| religious |
-| bible |
-| spiritual |
-| divine |
-| grace |
-| christian |
-| islam |
-| muslim |
-| jewish |
-| hindu |
-| buddhist |
-| religion |
-| blessing |
-| holy |
-| worship |
-| belief |
-| devotion |
-| religious duty |
-
-### Moral Purpose — Moral Obligation
-
-| Value |
-| --- |
-| Moral Purpose |
-| Moral Obligation |
-| duty |
-| obligation |
-| responsibility |
-| ought to |
-| moral |
-| ethics |
-| justice |
-| empathy |
-| altruism |
-| help others |
-| do the right thing |
-| humanity |
-| compassion |
-| conscience |
-| feel compelled |
-| must help |
-| moral duty |
-| ethically |
-| it's right |
-| moral responsibility |
-| obliged |
-| commitment |
-| moral imperative |
-| sense of duty |
+| Category | Keyword |
+| --- | --- |
+| Religious Affiliation | faith |
+| Religious Affiliation | god |
+| Religious Affiliation | church |
+| Religious Affiliation | blessed |
+| Religious Affiliation | prayer |
+| Religious Affiliation | mission |
+| Religious Affiliation | ministry |
+| Religious Affiliation | religious |
+| Religious Affiliation | bible |
+| Religious Affiliation | spiritual |
+| Religious Affiliation | divine |
+| Religious Affiliation | grace |
+| Religious Affiliation | christian |
+| Religious Affiliation | islam |
+| Religious Affiliation | muslim |
+| Religious Affiliation | jewish |
+| Religious Affiliation | hindu |
+| Religious Affiliation | buddhist |
+| Religious Affiliation | religion |
+| Religious Affiliation | blessing |
+| Religious Affiliation | holy |
+| Religious Affiliation | worship |
+| Religious Affiliation | belief |
+| Religious Affiliation | devotion |
+| Religious Affiliation | religious duty |
+| Moral Obligation | duty |
+| Moral Obligation | obligation |
+| Moral Obligation | responsibility |
+| Moral Obligation | ought to |
+| Moral Obligation | moral |
+| Moral Obligation | ethics |
+| Moral Obligation | justice |
+| Moral Obligation | empathy |
+| Moral Obligation | altruism |
+| Moral Obligation | help others |
+| Moral Obligation | do the right thing |
+| Moral Obligation | humanity |
+| Moral Obligation | compassion |
+| Moral Obligation | conscience |
+| Moral Obligation | feel compelled |
+| Moral Obligation | must help |
+| Moral Obligation | moral duty |
+| Moral Obligation | ethically |
+| Moral Obligation | it's right |
+| Moral Obligation | moral responsibility |
+| Moral Obligation | obliged |
+| Moral Obligation | commitment |
+| Moral Obligation | moral imperative |
+| Moral Obligation | sense of duty |
 
 ## 4. How the Scripts Work
 
