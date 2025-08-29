@@ -93,16 +93,19 @@ themes = {
         ],
     },
     'Moral Purpose': {
-        'Religious Affiliation': [
-            'faith', 'god', 'church', 'blessed', 'prayer', 'mission', 'ministry', 'religious',
-            'bible', 'spiritual', 'divine', 'grace', 'christian', 'islam', 'muslim', 'jewish', 'hindu',
-            'buddhist', 'religion', 'blessing', 'holy', 'worship', 'belief', 'devotion', 'religious duty'
+        'Altruism and Empathy': [
+            'selfless', 'selflessness', 'for their sake', 'no recognition', 'anonymous giving',
+            'pure giving', 'kindness', 'act of kindness', 'be kind', 'empathic concern',
+            'care for others', 'caring for others', 'lend a hand', 'support those in need',
+            'relieve suffering', 'ease their pain', 'save lives', 'change lives', 'better lives',
+            'give hope', 'bring hope', 'stand with them', 'stand together'
         ],
         'Moral Obligation': [
-            'duty', 'obligation', 'responsibility', 'ought to', 'moral', 'ethics', 'justice',
+            'duty', 'obligation', 'responsibility', 'moral', 'ethics', 'justice',
             'empathy', 'altruism', 'help others', 'do the right thing', 'humanity', 'compassion',
-            'conscience', 'feel compelled', 'must help', 'moral duty', 'ethically', "it's right",
-            'moral responsibility', 'obliged', 'commitment', 'moral imperative', 'sense of duty'
+            'conscience', 'feel compelled', 'moral duty', 'ethically',
+            'moral responsibility', 'obliged', 'commitment', 'moral imperative', 'sense of duty',
+            'faith-based duty', 'guided by faith'
         ],
     },
 }

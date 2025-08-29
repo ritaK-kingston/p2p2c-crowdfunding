@@ -225,35 +225,32 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 
 | Category | Keyword |
 | --- | --- |
-| Religious Affiliation | faith |
-| Religious Affiliation | god |
-| Religious Affiliation | church |
-| Religious Affiliation | blessed |
-| Religious Affiliation | prayer |
-| Religious Affiliation | mission |
-| Religious Affiliation | ministry |
-| Religious Affiliation | religious |
-| Religious Affiliation | bible |
-| Religious Affiliation | spiritual |
-| Religious Affiliation | divine |
-| Religious Affiliation | grace |
-| Religious Affiliation | christian |
-| Religious Affiliation | islam |
-| Religious Affiliation | muslim |
-| Religious Affiliation | jewish |
-| Religious Affiliation | hindu |
-| Religious Affiliation | buddhist |
-| Religious Affiliation | religion |
-| Religious Affiliation | blessing |
-| Religious Affiliation | holy |
-| Religious Affiliation | worship |
-| Religious Affiliation | belief |
-| Religious Affiliation | devotion |
-| Religious Affiliation | religious duty |
+| Altruism and Empathy | selfless |
+| Altruism and Empathy | selflessness |
+| Altruism and Empathy | for their sake |
+| Altruism and Empathy | no recognition |
+| Altruism and Empathy | anonymous giving |
+| Altruism and Empathy | pure giving |
+| Altruism and Empathy | kindness |
+| Altruism and Empathy | act of kindness |
+| Altruism and Empathy | be kind |
+| Altruism and Empathy | empathic concern |
+| Altruism and Empathy | care for others |
+| Altruism and Empathy | caring for others |
+| Altruism and Empathy | lend a hand |
+| Altruism and Empathy | support those in need |
+| Altruism and Empathy | relieve suffering |
+| Altruism and Empathy | ease their pain |
+| Altruism and Empathy | save lives |
+| Altruism and Empathy | change lives |
+| Altruism and Empathy | better lives |
+| Altruism and Empathy | give hope |
+| Altruism and Empathy | bring hope |
+| Altruism and Empathy | stand with them |
+| Altruism and Empathy | stand together |
 | Moral Obligation | duty |
 | Moral Obligation | obligation |
 | Moral Obligation | responsibility |
-| Moral Obligation | ought to |
 | Moral Obligation | moral |
 | Moral Obligation | ethics |
 | Moral Obligation | justice |
@@ -265,15 +262,15 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Moral Obligation | compassion |
 | Moral Obligation | conscience |
 | Moral Obligation | feel compelled |
-| Moral Obligation | must help |
 | Moral Obligation | moral duty |
 | Moral Obligation | ethically |
-| Moral Obligation | it's right |
 | Moral Obligation | moral responsibility |
 | Moral Obligation | obliged |
 | Moral Obligation | commitment |
 | Moral Obligation | moral imperative |
 | Moral Obligation | sense of duty |
+| Moral Obligation | faith-based duty |
+| Moral Obligation | guided by faith |
 
 ## 4. How the Scripts Work
 
