@@ -46,7 +46,7 @@ Each script folder (`search` and `analysis`) contains its own `requirements.txt`
 
 ---
 
-## 3. Sentiment Analysis Themes and Keywords
+## 3. Sentiment Analysis Themes, Categories and Keywords
 
 The analysis script uses a comprehensive dictionary of themes, categories, and keywords to categorize crowdfunding stories. The taxonomy is presented below as tables per theme. Each row shows the Category and a single Keyword.
 
@@ -54,107 +54,123 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 
 | Category | Keyword |
 | --- | --- |
-| Close to the Heart | personal trauma |
-| Close to the Heart | loss |
-| Close to the Heart | memory of |
-| Close to the Heart | dedicated to |
-| Close to the Heart | personal connection |
-| Close to the Heart | close to my heart |
-| Close to the Heart | affected by |
 | Close to the Heart | family |
 | Close to the Heart | friend |
 | Close to the Heart | loved one |
+| Close to the Heart | loss |
+| Close to the Heart | memory of |
 | Close to the Heart | in memory |
+| Close to the Heart | in loving memory |
+| Close to the Heart | personal trauma |
+| Close to the Heart | affected by |
+| Close to the Heart | close to my heart |
+| Close to the Heart | significant to me |
+| Close to the Heart | means a lot to me |
+| Close to the Heart | dedicated to |
+| Close to the Heart | tribute to |
 | Close to the Heart | because of my experience with |
 | Close to the Heart | after losing |
 | Close to the Heart | after experiencing |
-| Close to the Heart | significant to me |
-| Close to the Heart | means a lot to me |
 | Close to the Heart | in honour of |
-| Close to the Heart | in loving memory |
-| Close to the Heart | tribute to |
-| Close to the Heart | in memory of |
+| Close to the Heart | personal connection |
+| Close to the Heart | first-hand |
+| Close to the Heart | directly touched |
+| Close to the Heart | personal experience |
+| Close to the Heart | my partner |
+| Close to the Heart | my child |
+| Close to the Heart | my parent |
 | Close to Home | local |
 | Close to Home | community |
+| Close to Home | local community |
 | Close to Home | neighborhood |
-| Close to Home | near me |
+| Close to Home | nearby |
 | Close to Home | close to home |
 | Close to Home | in my area |
-| Close to Home | local school |
-| Close to Home | local hospital |
-| Close to Home | supporting local |
 | Close to Home | our town |
 | Close to Home | our city |
-| Close to Home | benefits my community |
-| Close to Home | nearby |
-| Close to Home | close by |
-| Close to Home | local community |
+| Close to Home | our region |
+| Close to Home | local school |
+| Close to Home | local hospital |
 | Close to Home | local cause |
+| Close to Home | local initiative |
+| Close to Home | supporting local |
 | Close to Home | help our area |
 | Close to Home | helping locally |
-| Close to Home | our region |
-| Close to Home | local initiative |
+| Close to Home | benefits my community |
+| Close to Home | near me |
+| Close to Home | close by |
+| Close to Home | my local area |
+| Close to Home | my neighborhood |
+| Close to Home | my community |
+| Close to Home | my town |
+| Close to Home | my city |
 
 ### Self-Gain
 
 | Category | Keyword |
 | --- | --- |
-| Social Standing | social status |
-| Social Standing | social recognition |
-| Social Standing | identity expression |
+| Social Standing | identity |
 | Social Standing | social media |
 | Social Standing | share |
 | Social Standing | post |
 | Social Standing | like |
 | Social Standing | follow |
-| Social Standing | support me |
-| Social Standing | raise awareness |
-| Social Standing | get the word out |
+| Social Standing | followers |
 | Social Standing | trend |
 | Social Standing | viral |
-| Social Standing | identity |
 | Social Standing | brand |
-| Social Standing | followers |
-| Social Standing | praise |
 | Social Standing | reputation |
 | Social Standing | public image |
-| Social Standing | prestige |
-| Social Standing | kudos |
-| Social Standing | networking |
+| Social Standing | social status |
+| Social Standing | social recognition |
+| Social Standing | identity expression |
 | Social Standing | visibility |
 | Social Standing | social influence |
 | Social Standing | popularity |
-| Personal Development | personal growth |
+| Social Standing | praise |
+| Social Standing | kudos |
+| Social Standing | networking |
+| Social Standing | prestige |
+| Social Standing | support me |
+| Social Standing | get the word out |
+| Social Standing | friends |
 | Personal Development | learn |
-| Personal Development | develop |
-| Personal Development | improve myself |
-| Personal Development | challenge myself |
-| Personal Development | self-improvement |
-| Personal Development | gain experience |
-| Personal Development | skills |
-| Personal Development | new abilities |
-| Personal Development | transformative |
 | Personal Development | journey |
+| Personal Development | skills |
+| Personal Development | develop |
 | Personal Development | overcome |
-| Personal Development | personal journey |
-| Personal Development | self-discovery |
-| Personal Development | grow as a person |
-| Personal Development | better myself |
-| Personal Development | achieve my goals |
+| Personal Development | transformative |
 | Personal Development | personal development |
-| Personal Development | self-fulfillment |
+| Personal Development | personal journey |
 | Personal Development | aspiration |
+| Personal Development | gain experience |
+| Personal Development | personal growth |
+| Personal Development | self-improvement |
+| Personal Development | challenge myself |
+| Personal Development | comfort zone |
+| Personal Development | dreams |
+| Personal Development | fulfillment |
+| Personal Development | joy |
+| Personal Development | determined |
+| Personal Development | challenge |
+| Personal Development | limits |
+| Personal Development | healing |
+| Personal Development | processing loss |
+| Personal Development | new competencies |
+| Personal Development | physicality |
+| Personal Development | personal goal achievement |
+| Seeking Experiences | challenge |
+| Seeking Experiences | event |
+| Seeking Experiences | experience |
 | Seeking Experiences | fun |
 | Seeking Experiences | enjoy |
-| Seeking Experiences | experience |
+| Seeking Experiences | activity |
+| Seeking Experiences | marathon |
+| Seeking Experiences | festive |
 | Seeking Experiences | exciting |
 | Seeking Experiences | adventure |
-| Seeking Experiences | challenge |
-| Seeking Experiences | marathon |
 | Seeking Experiences | hike |
 | Seeking Experiences | skydiving |
-| Seeking Experiences | activity |
-| Seeking Experiences | event |
 | Seeking Experiences | participate in |
 | Seeking Experiences | enjoyment |
 | Seeking Experiences | recreational |
@@ -167,27 +183,26 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Seeking Experiences | enjoyable experience |
 | Seeking Experiences | memorable |
 | Seeking Experiences | leisure |
-| Seeking Experiences | festive |
 | Seeking Experiences | celebration |
 
 ### Empowerment
 
 | Category | Keyword |
 | --- | --- |
+| Stewardship | ensure |
+| Stewardship | make sure |
 | Stewardship | control |
+| Stewardship | manage |
+| Stewardship | oversee |
+| Stewardship | responsibility |
 | Stewardship | direct impact |
 | Stewardship | transparency |
 | Stewardship | efficiency |
 | Stewardship | effective altruism |
-| Stewardship | manage |
-| Stewardship | oversee |
-| Stewardship | ensure |
 | Stewardship | utilize resources effectively |
 | Stewardship | stewardship |
 | Stewardship | maximizing impact |
 | Stewardship | evidence-based |
-| Stewardship | make sure |
-| Stewardship | responsibility |
 | Stewardship | efficient use |
 | Stewardship | accountability |
 | Stewardship | ensure funds are used properly |
@@ -197,6 +212,8 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Stewardship | responsible giving |
 | Stewardship | efficient management |
 | Stewardship | maximize effectiveness |
+| Stewardship | personally overseeing |
+| Stewardship | maximum impact |
 | Advocacy | advocate |
 | Advocacy | raise awareness |
 | Advocacy | speak out |
@@ -220,6 +237,8 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Advocacy | advocacy |
 | Advocacy | take action |
 | Advocacy | speak up |
+| Advocacy | campaign for |
+| Advocacy | educate others |
 
 ### Moral Purpose
 
