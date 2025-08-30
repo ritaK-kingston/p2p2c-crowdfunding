@@ -152,7 +152,7 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Personal Development | fulfillment |
 | Personal Development | joy |
 | Personal Development | determined |
-| Personal Development | challenge |
+| Personal Development | growth |
 | Personal Development | limits |
 | Personal Development | healing |
 | Personal Development | processing loss |
@@ -222,7 +222,7 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Advocacy | marginalized |
 | Advocacy | social movement |
 | Advocacy | make a difference |
-| Advocacy | change |
+| Advocacy | reform |
 | Advocacy | policy |
 | Advocacy | activism |
 | Advocacy | fight for |
@@ -269,11 +269,11 @@ The analysis script uses a comprehensive dictionary of themes, categories, and k
 | Altruism and Empathy | stand together |
 | Moral Obligation | duty |
 | Moral Obligation | obligation |
-| Moral Obligation | responsibility |
+| Moral Obligation | obliged |
 | Moral Obligation | moral |
 | Moral Obligation | ethics |
 | Moral Obligation | justice |
-| Moral Obligation | empathy |
+| Moral Obligation | compassionate |
 | Moral Obligation | altruism |
 | Moral Obligation | help others |
 | Moral Obligation | do the right thing |
@@ -445,16 +445,16 @@ This will:
 
 #### **Theme 2: Self-Gain**
 - **Social Standing**: identity, social media, share, post, like, follow, followers, trend, viral, brand, reputation, public image, social status, social recognition, identity expression, visibility, social influence, popularity, praise, kudos, networking, prestige, support me, get the word out, friends
-- **Personal Development**: learn, journey, skills, develop, overcome, transformative, personal development, personal journey, aspiration, gain experience, personal growth, self-improvement, challenge myself, comfort zone, dreams, fulfillment, joy, determined, challenge, limits, healing, processing loss, new competencies, physicality, personal goal achievement
+- **Personal Development**: learn, journey, skills, develop, overcome, transformative, personal development, personal journey, aspiration, gain experience, personal growth, self-improvement, challenge myself, comfort zone, dreams, fulfillment, joy, determined, growth, limits, healing, processing loss, new competencies, physicality, personal goal achievement
 - **Seeking Experiences**: challenge, event, experience, fun, enjoy, activity, marathon, festive, exciting, adventure, hike, skydiving, participate in, enjoyment, recreational, pleasure, once in a lifetime, exciting opportunity, thrill, fun run, recreational activity, enjoyable experience, memorable, leisure, celebration
 
 #### **Theme 3: Empowerment**
 - **Stewardship**: ensure, make sure, control, manage, oversee, responsibility, direct impact, transparency, efficiency, effective altruism, utilize resources effectively, stewardship, maximizing impact, evidence-based, efficient use, accountability, ensure funds are used properly, allocate resources, direct involvement, trustworthy, responsible giving, efficient management, maximize effectiveness, personally overseeing, maximum impact
-- **Advocacy**: advocate, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, change, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up, campaign for, educate others
+- **Advocacy**: advocate, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, reform, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up, campaign for, educate others
 
 #### **Theme 4: Moral Purpose**
 - **Altruism and Empathy**: selfless, selflessness, for their sake, no recognition, anonymous giving, pure giving, kindness, act of kindness, be kind, empathic concern, care for others, caring for others, lend a hand, support those in need, relieve suffering, ease their pain, save lives, change lives, better lives, give hope, bring hope, stand with them, stand together
-- **Moral Obligation**: duty, obligation, responsibility, moral, ethics, justice, empathy, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, moral duty, ethically, moral responsibility, obliged, commitment, moral imperative, sense of duty, faith-based duty, guided by faith
+- **Moral Obligation**: duty, obligation, obliged, moral, ethics, justice, compassionate, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, moral duty, ethically, moral responsibility, commitment, moral imperative, sense of duty, faith-based duty, guided by faith
 
 4. **Output**:
    - **theme_ranking.txt** and **category_ranking.txt** - Detailed rankings of themes and categories

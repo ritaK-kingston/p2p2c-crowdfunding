@@ -69,7 +69,7 @@ themes = {
         'Personal Development': [
             'learn', 'journey', 'skills', 'develop', 'overcome', 'transformative', 'personal development',
             'personal journey', 'aspiration', 'gain experience', 'personal growth', 'self-improvement',
-            'challenge myself', 'comfort zone', 'dreams', 'fulfillment', 'joy', 'determined', 'challenge',
+            'challenge myself', 'comfort zone', 'dreams', 'fulfillment', 'joy', 'determined', 'growth',
             'limits', 'healing', 'processing loss', 'new competencies', 'physicality', 'personal goal achievement'
         ],
         'Seeking Experiences': [
@@ -89,7 +89,7 @@ themes = {
         ],
         'Advocacy': [
             'advocate', 'raise awareness', 'speak out', 'voice', 'visibility', 'marginalized', 'social movement',
-            'make a difference', 'change', 'policy', 'activism', 'fight for', 'supporting cause', 'urge',
+            'make a difference', 'reform', 'policy', 'activism', 'fight for', 'supporting cause', 'urge',
             'petition', 'social justice', 'stand up for', 'protest', 'equality', 'human rights', 'advocacy',
             'take action', 'speak up', 'campaign for', 'educate others'
         ],
@@ -103,10 +103,10 @@ themes = {
             'give hope', 'bring hope', 'stand with them', 'stand together'
         ],
         'Moral Obligation': [
-            'duty', 'obligation', 'responsibility', 'moral', 'ethics', 'justice',
-            'empathy', 'altruism', 'help others', 'do the right thing', 'humanity', 'compassion',
+            'duty', 'obligation', 'obliged', 'moral', 'ethics', 'justice',
+            'compassionate', 'altruism', 'help others', 'do the right thing', 'humanity', 'compassion',
             'conscience', 'feel compelled', 'moral duty', 'ethically',
-            'moral responsibility', 'obliged', 'commitment', 'moral imperative', 'sense of duty',
+            'moral responsibility', 'commitment', 'moral imperative', 'sense of duty',
             'faith-based duty', 'guided by faith'
         ],
     },
