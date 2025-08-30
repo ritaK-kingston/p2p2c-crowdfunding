@@ -173,3 +173,13 @@ cython_debug/
 # Project-specific files
 moral_purpose_keywords.md
 theme_updates.md
+
+# Sentiment analysis output files
+theme_ranking.txt
+category_ranking.txt
+stories_with_theme_and_category_weights.csv
+keyword_contributions.txt
+sentiment_analysis_backup.py
+instructions-themes-categories.md
+plots/
+top_stories_by_category/

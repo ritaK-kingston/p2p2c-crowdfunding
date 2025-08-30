@@ -45,51 +45,53 @@ def get_db_connection():
 themes = {
     'Proximity': {
         'Close to the Heart': [
-            'personal trauma', 'loss', 'memory of', 'dedicated to', 'personal connection',
-            'close to my heart', 'affected by', 'family', 'friend', 'loved one', 'in memory',
-            'because of my experience with', 'after losing', 'after experiencing', 'significant to me',
-            'means a lot to me', 'in honour of', 'in loving memory', 'tribute to', 'in memory of'
+            'family', 'friend', 'loved one', 'loss', 'memory of', 'in memory', 'in loving memory',
+            'personal trauma', 'affected by', 'close to my heart', 'significant to me', 'means a lot to me',
+            'dedicated to', 'tribute to', 'because of my experience with', 'after losing', 'after experiencing',
+            'in honour of', 'personal connection', 'first-hand', 'directly touched', 'personal experience',
+            'my partner', 'my child', 'my parent'
         ],
         'Close to Home': [
-            'local', 'community', 'neighborhood', 'near me', 'close to home', 'in my area',
-            'local school', 'local hospital', 'supporting local', 'our town', 'our city',
-            'benefits my community', 'nearby', 'close by', 'local community', 'local cause',
-            'help our area', 'helping locally', 'our region', 'local initiative'
+            'local', 'community', 'local community', 'neighborhood', 'nearby', 'close to home',
+            'in my area', 'our town', 'our city', 'our region', 'local school', 'local hospital',
+            'local cause', 'local initiative', 'supporting local', 'help our area', 'helping locally',
+            'benefits my community', 'near me', 'close by', 'my local area', 'my neighborhood',
+            'my community', 'my town', 'my city'
         ],
     },
     'Self-Gain': {
-        'Social Standing': [  # <-- Renamed here
-            'social status', 'social recognition', 'identity expression', 'social media', 'share',
-            'post', 'like', 'follow', 'support me', 'raise awareness', 'get the word out', 'trend',
-            'viral', 'identity', 'brand', 'followers', 'praise', 'reputation', 'public image',
-            'prestige', 'kudos', 'networking', 'visibility', 'social influence', 'popularity'
+        'Social Standing': [
+            'identity', 'social media', 'share', 'post', 'like', 'follow', 'followers', 'trend',
+            'viral', 'brand', 'reputation', 'public image', 'social status', 'social recognition',
+            'identity expression', 'visibility', 'social influence', 'popularity', 'praise', 'kudos',
+            'networking', 'prestige', 'support me', 'get the word out', 'friends'
         ],
         'Personal Development': [
-            'personal growth', 'learn', 'develop', 'improve myself', 'challenge myself',
-            'self-improvement', 'gain experience', 'skills', 'new abilities', 'transformative',
-            'journey', 'overcome', 'personal journey', 'self-discovery', 'grow as a person',
-            'better myself', 'achieve my goals', 'personal development', 'self-fulfillment', 'aspiration'
+            'learn', 'journey', 'skills', 'develop', 'overcome', 'transformative', 'personal development',
+            'personal journey', 'aspiration', 'gain experience', 'personal growth', 'self-improvement',
+            'challenge myself', 'comfort zone', 'dreams', 'fulfillment', 'joy', 'determined', 'challenge',
+            'limits', 'healing', 'processing loss', 'new competencies', 'physicality', 'personal goal achievement'
         ],
         'Seeking Experiences': [
-            'fun', 'enjoy', 'experience', 'exciting', 'adventure', 'challenge', 'marathon', 'hike',
-            'skydiving', 'activity', 'event', 'participate in', 'enjoyment', 'recreational', 'pleasure',
-            'once in a lifetime', 'exciting opportunity', 'thrill', 'fun run', 'recreational activity',
-            'enjoyable experience', 'memorable', 'leisure', 'festive', 'celebration'
+            'challenge', 'event', 'experience', 'fun', 'enjoy', 'activity', 'marathon', 'festive',
+            'exciting', 'adventure', 'hike', 'skydiving', 'participate in', 'enjoyment', 'recreational',
+            'pleasure', 'once in a lifetime', 'exciting opportunity', 'thrill', 'fun run', 'recreational activity',
+            'enjoyable experience', 'memorable', 'leisure', 'celebration'
         ],
     },
     'Empowerment': {
         'Stewardship': [
-            'control', 'direct impact', 'transparency', 'efficiency', 'effective altruism', 'manage',
-            'oversee', 'ensure', 'utilize resources effectively', 'stewardship', 'maximizing impact',
-            'evidence-based', 'make sure', 'responsibility', 'efficient use', 'accountability',
-            'ensure funds are used properly', 'allocate resources', 'direct involvement', 'trustworthy',
-            'responsible giving', 'efficient management', 'maximize effectiveness'
+            'ensure', 'make sure', 'control', 'manage', 'oversee', 'responsibility', 'direct impact',
+            'transparency', 'efficiency', 'effective altruism', 'utilize resources effectively', 'stewardship',
+            'maximizing impact', 'evidence-based', 'efficient use', 'accountability', 'ensure funds are used properly',
+            'allocate resources', 'direct involvement', 'trustworthy', 'responsible giving', 'efficient management',
+            'maximize effectiveness', 'personally overseeing', 'maximum impact'
         ],
         'Advocacy': [
-            'advocate', 'raise awareness', 'speak out', 'voice', 'visibility',
-            'marginalized', 'social movement', 'make a difference', 'change', 'policy', 'activism',
-            'fight for', 'supporting cause', 'urge', 'petition', 'social justice', 'stand up for',
-            'protest', 'equality', 'human rights', 'advocacy', 'take action', 'speak up'
+            'advocate', 'raise awareness', 'speak out', 'voice', 'visibility', 'marginalized', 'social movement',
+            'make a difference', 'change', 'policy', 'activism', 'fight for', 'supporting cause', 'urge',
+            'petition', 'social justice', 'stand up for', 'protest', 'equality', 'human rights', 'advocacy',
+            'take action', 'speak up', 'campaign for', 'educate others'
         ],
     },
     'Moral Purpose': {
@@ -165,6 +167,28 @@ def preprocess_text(text):
     tokens = word_tokenize(text.lower())
     tokens = [word for word in tokens if word.isalpha() and word not in stop_words]
     return ' '.join(tokens)
+
+def analyze_keyword_contributions(tfidf_df, keyword_to_categories, feature_names):
+    """
+    Analyze how much each keyword contributes to each category's total score.
+    Returns a dictionary mapping categories to keyword contribution dictionaries.
+    """
+    keyword_contributions = {}
+    
+    # For each category, calculate the total contribution from each keyword
+    for category in set().union(*keyword_to_categories.values()):
+        keyword_contributions[category] = {}
+        
+        # Find all keywords that belong to this category
+        category_keywords = [kw for kw in feature_names if category in keyword_to_categories.get(kw, [])]
+        
+        # Calculate total contribution of each keyword to this category
+        for keyword in category_keywords:
+            # Sum the TF-IDF scores for this keyword across all stories
+            total_contribution = tfidf_df[keyword].sum()
+            keyword_contributions[category][keyword] = total_contribution
+    
+    return keyword_contributions
 
 # ------------------------------------------------------------------------
 # 6. Main analysis function
@@ -299,7 +323,66 @@ def main_analysis():
 
     print("\nRankings saved to 'theme_ranking.txt' and 'category_ranking.txt'.")
 
-    # 12) Visualizations
+    # 12) Keyword contribution analysis
+    print("\n" + "="*80)
+    print("KEYWORD CONTRIBUTION ANALYSIS")
+    print("="*80)
+    
+    # Analyze keyword contributions to each category
+    keyword_contributions = analyze_keyword_contributions(tfidf_df, keyword_to_categories, feature_names)
+    
+    # Print keyword contribution tables for each category
+    for category in category_to_theme.keys():
+        print(f"\n--- Keyword Contributions to '{category}' Category ---")
+        if category in keyword_contributions:
+            contributions = keyword_contributions[category]
+            if contributions:
+                # Sort by contribution value (descending)
+                sorted_contributions = sorted(contributions.items(), key=lambda x: x[1], reverse=True)
+                
+                print(f"{'Keyword':<30} {'Contribution':<15} {'% of Category':<15}")
+                print("-" * 60)
+                
+                total_category_contribution = sum(contributions.values())
+                for keyword, contribution in sorted_contributions[:10]:  # Top 10 keywords
+                    percentage = (contribution / total_category_contribution * 100) if total_category_contribution > 0 else 0
+                    print(f"{keyword:<30} {contribution:<15.4f} {percentage:<15.2f}%")
+                
+                if len(sorted_contributions) > 10:
+                    print(f"... and {len(sorted_contributions) - 10} more keywords")
+            else:
+                print("No keywords contributed to this category.")
+        else:
+            print("No keywords contributed to this category.")
+    
+    # Save keyword contribution analysis to file
+    with open('keyword_contributions.txt', 'w') as f:
+        f.write("KEYWORD CONTRIBUTION ANALYSIS\n")
+        f.write("="*50 + "\n\n")
+        
+        for category in category_to_theme.keys():
+            f.write(f"--- Keyword Contributions to '{category}' Category ---\n")
+            if category in keyword_contributions:
+                contributions = keyword_contributions[category]
+                if contributions:
+                    sorted_contributions = sorted(contributions.items(), key=lambda x: x[1], reverse=True)
+                    total_category_contribution = sum(contributions.values())
+                    
+                    f.write(f"{'Keyword':<30} {'Contribution':<15} {'% of Category':<15}\n")
+                    f.write("-" * 60 + "\n")
+                    
+                    for keyword, contribution in sorted_contributions:
+                        percentage = (contribution / total_category_contribution * 100) if total_category_contribution > 0 else 0
+                        f.write(f"{keyword:<30} {contribution:<15.4f} {percentage:<15.2f}%\n")
+                else:
+                    f.write("No keywords contributed to this category.\n")
+            else:
+                f.write("No keywords contributed to this category.\n")
+            f.write("\n")
+    
+    print(f"\nKeyword contribution analysis saved to 'keyword_contributions.txt'.")
+
+    # 13) Visualizations
     if not os.path.exists('plots'):
         os.makedirs('plots')
 
@@ -354,11 +437,11 @@ def main_analysis():
     plt.show()
     print("Theme correlation heatmap saved as 'plots/theme_correlation_heatmap.png'.")
 
-    # 13) Save final DataFrame
+    # 14) Save final DataFrame
     df.to_csv('stories_with_theme_and_category_weights.csv', index=False)
     print("\nResults saved to 'stories_with_theme_and_category_weights.csv'.")
 
-    # 14) Top 2 stories per category
+    # 15) Top 2 stories per category
     if not os.path.exists('top_stories_by_category'):
         os.makedirs('top_stories_by_category')
 

@@ -418,12 +418,38 @@ This will:
 
 1. Read relevant crowdfunding data from the `crowdfunding` table.
 2. Clean and preprocess the story text.
-3. Apply a TF-IDF-based thematic/categorical analysis.
-4. Output:
-   - **theme_ranking.txt** and **category_ranking.txt**  
+3. Apply a TF-IDF-based thematic/categorical analysis using the following keyword taxonomy:
+
+#### **Theme 1: Proximity**
+- **Close to the Heart**: family, friend, loved one, loss, memory of, in memory, in loving memory, personal trauma, affected by, close to my heart, significant to me, means a lot to me, dedicated to, tribute to, because of my experience with, after losing, after experiencing, in honour of, personal connection, first-hand, directly touched, personal experience, my partner, my child, my parent
+- **Close to Home**: local, community, local community, neighborhood, nearby, close to home, in my area, our town, our city, our region, local school, local hospital, local cause, local initiative, supporting local, help our area, helping locally, benefits my community, near me, close by, my local area, my neighborhood, my community, my town, my city
+
+#### **Theme 2: Self-Gain**
+- **Social Standing**: identity, social media, share, post, like, follow, followers, trend, viral, brand, reputation, public image, social status, social recognition, identity expression, visibility, social influence, popularity, praise, kudos, networking, prestige, support me, get the word out, friends
+- **Personal Development**: learn, journey, skills, develop, overcome, transformative, personal development, personal journey, aspiration, gain experience, personal growth, self-improvement, challenge myself, comfort zone, dreams, fulfillment, joy, determined, challenge, limits, healing, processing loss, new competencies, physicality, personal goal achievement
+- **Seeking Experiences**: challenge, event, experience, fun, enjoy, activity, marathon, festive, exciting, adventure, hike, skydiving, participate in, enjoyment, recreational, pleasure, once in a lifetime, exciting opportunity, thrill, fun run, recreational activity, enjoyable experience, memorable, leisure, celebration
+
+#### **Theme 3: Empowerment**
+- **Stewardship**: ensure, make sure, control, manage, oversee, responsibility, direct impact, transparency, efficiency, effective altruism, utilize resources effectively, stewardship, maximizing impact, evidence-based, efficient use, accountability, ensure funds are used properly, allocate resources, direct involvement, trustworthy, responsible giving, efficient management, maximize effectiveness, personally overseeing, maximum impact
+- **Advocacy**: advocate, raise awareness, speak out, voice, visibility, marginalized, social movement, make a difference, change, policy, activism, fight for, supporting cause, urge, petition, social justice, stand up for, protest, equality, human rights, advocacy, take action, speak up, campaign for, educate others
+
+#### **Theme 4: Moral Purpose**
+- **Altruism and Empathy**: selfless, selflessness, for their sake, no recognition, anonymous giving, pure giving, kindness, act of kindness, be kind, empathic concern, care for others, caring for others, lend a hand, support those in need, relieve suffering, ease their pain, save lives, change lives, better lives, give hope, bring hope, stand with them, stand together
+- **Moral Obligation**: duty, obligation, responsibility, moral, ethics, justice, empathy, altruism, help others, do the right thing, humanity, compassion, conscience, feel compelled, moral duty, ethically, moral responsibility, obliged, commitment, moral imperative, sense of duty, faith-based duty, guided by faith
+
+4. **Output**:
+   - **theme_ranking.txt** and **category_ranking.txt** - Detailed rankings of themes and categories
+   - **keyword_contributions.txt** - Analysis showing which keywords drive the weights in each category
    - **plots/** folder containing bar charts and heatmaps  
    - **stories_with_theme_and_category_weights.csv** (final dataset)  
    - **top_stories_by_category** folder with top 2 stories per category
+
+#### **Keyword Contribution Analysis**
+The script now includes a comprehensive keyword contribution analysis that shows:
+- Which specific keywords contribute most to each category's weight
+- The percentage contribution of each keyword within its category
+- Whether categories are driven by a few dominant keywords or distributed more evenly
+- This helps identify if the thematic analysis is balanced or overly reliant on specific terms
 
 ---
 
@@ -436,6 +462,9 @@ This will:
 - **Performance**:  
   - TF-IDF vectorization on large datasets might require more memory or performance tuning.  
   - For extremely large datasets, consider chunked loading or more advanced data pipeline strategies.
+- **Keyword Analysis**:  
+  - The keyword contribution analysis provides insights into which terms drive each category's weight.
+  - Categories with highly concentrated keyword distributions may need refinement for more balanced analysis.
 
 ---
 
