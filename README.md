@@ -505,3 +505,272 @@ You are free to use, modify, and distribute this project in accordance with the 
 ---
 
 **Happy coding!** If you encounter any issues or have feature requests, please open an issue in the repository.
+
+## 11. Keyword Contribution Tables
+
+The following tables are generated from `analysis/keyword_contributions.txt`. They show, for each Category, the keyword-level contributions and their percentage share within the Category.
+
+### Close to the Heart
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| family | 1122.0747 | 73.61% |
+| loss | 172.1247 | 11.29% |
+| friend | 166.9906 | 10.95% |
+| loved one | 46.6441 | 3.06% |
+| personal experience | 11.6717 | 0.77% |
+| personal connection | 4.0680 | 0.27% |
+| directly touched | 0.7714 | 0.05% |
+| significant to me | 0.0000 | 0.00% |
+| affected by | 0.0000 | 0.00% |
+| my parent | 0.0000 | 0.00% |
+| memory of | 0.0000 | 0.00% |
+| in loving memory | 0.0000 | 0.00% |
+| after experiencing | 0.0000 | 0.00% |
+| close to my heart | 0.0000 | 0.00% |
+| my child | 0.0000 | 0.00% |
+| because of my experience with | 0.0000 | 0.00% |
+| means a lot to me | 0.0000 | 0.00% |
+| first-hand | 0.0000 | 0.00% |
+| tribute to | 0.0000 | 0.00% |
+| after losing | 0.0000 | 0.00% |
+| in memory | 0.0000 | 0.00% |
+| dedicated to | 0.0000 | 0.00% |
+| my partner | 0.0000 | 0.00% |
+| personal trauma | 0.0000 | 0.00% |
+| in honour of | 0.0000 | 0.00% |
+
+### Close to Home
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| community | 1200.9563 | 59.19% |
+| local | 670.0934 | 33.02% |
+| local community | 89.8661 | 4.43% |
+| supporting local | 21.4111 | 1.06% |
+| nearby | 14.4313 | 0.71% |
+| neighborhood | 12.1724 | 0.60% |
+| local hospital | 11.0015 | 0.54% |
+| local school | 4.3726 | 0.22% |
+| local cause | 2.7743 | 0.14% |
+| local initiative | 2.0245 | 0.10% |
+| close by | 0.0000 | 0.00% |
+| help our area | 0.0000 | 0.00% |
+| my neighborhood | 0.0000 | 0.00% |
+| my community | 0.0000 | 0.00% |
+| helping locally | 0.0000 | 0.00% |
+| in my area | 0.0000 | 0.00% |
+| my city | 0.0000 | 0.00% |
+| near me | 0.0000 | 0.00% |
+| our town | 0.0000 | 0.00% |
+| our region | 0.0000 | 0.00% |
+| my local area | 0.0000 | 0.00% |
+| our city | 0.0000 | 0.00% |
+| benefits my community | 0.0000 | 0.00% |
+| my town | 0.0000 | 0.00% |
+| close to home | 0.0000 | 0.00% |
+
+### Social Standing
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| like | 1144.7775 | 40.34% |
+| friends | 552.8840 | 19.48% |
+| share | 401.9820 | 14.17% |
+| identity | 315.0816 | 11.10% |
+| follow | 117.7026 | 4.15% |
+| post | 113.8666 | 4.01% |
+| social media | 98.9640 | 3.49% |
+| brand | 41.1902 | 1.45% |
+| praise | 8.2765 | 0.29% |
+| networking | 7.0983 | 0.25% |
+| followers | 6.4056 | 0.23% |
+| viral | 6.0068 | 0.21% |
+| reputation | 5.9809 | 0.21% |
+| visibility | 5.7724 | 0.20% |
+| trend | 2.8048 | 0.10% |
+| prestige | 2.5974 | 0.09% |
+| popularity | 2.1628 | 0.08% |
+| identity expression | 1.6596 | 0.06% |
+| social status | 1.4623 | 0.05% |
+| kudos | 1.0000 | 0.04% |
+| social influence | 0.0000 | 0.00% |
+| public image | 0.0000 | 0.00% |
+| social recognition | 0.0000 | 0.00% |
+| get the word out | 0.0000 | 0.00% |
+| support me | 0.0000 | 0.00% |
+
+### Personal Development
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| learn | 201.8220 | 18.24% |
+| skills | 187.3744 | 16.93% |
+| journey | 184.3733 | 16.66% |
+| develop | 115.4633 | 10.43% |
+| joy | 106.8362 | 9.66% |
+| determined | 73.3550 | 6.63% |
+| overcome | 55.6843 | 5.03% |
+| dreams | 47.5276 | 4.30% |
+| growth | 35.0851 | 3.17% |
+| healing | 29.9895 | 2.71% |
+| limits | 25.7540 | 2.33% |
+| transformative | 16.2777 | 1.47% |
+| comfort zone | 14.7245 | 1.33% |
+| personal development | 3.3886 | 0.31% |
+| fulfillment | 2.3788 | 0.21% |
+| personal journey | 2.2165 | 0.20% |
+| aspiration | 1.7976 | 0.16% |
+| gain experience | 1.1485 | 0.10% |
+| personal growth | 0.8391 | 0.08% |
+| processing loss | 0.4709 | 0.04% |
+| challenge myself | 0.0000 | 0.00% |
+| self-improvement | 0.0000 | 0.00% |
+| physicality | 0.0000 | 0.00% |
+| personal goal achievement | 0.0000 | 0.00% |
+| new competencies | 0.0000 | 0.00% |
+
+### Seeking Experiences
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| challenge | 766.9622 | 32.87% |
+| event | 394.4266 | 16.90% |
+| experience | 266.3748 | 11.42% |
+| fun | 245.0585 | 10.50% |
+| enjoy | 172.6691 | 7.40% |
+| activity | 85.7914 | 3.68% |
+| festive | 84.3246 | 3.61% |
+| marathon | 83.8230 | 3.59% |
+| exciting | 55.2520 | 2.37% |
+| celebration | 41.6725 | 1.79% |
+| pleasure | 33.2758 | 1.43% |
+| adventure | 31.6170 | 1.35% |
+| hike | 21.4099 | 0.92% |
+| leisure | 12.2634 | 0.53% |
+| recreational | 10.9433 | 0.47% |
+| enjoyment | 8.2449 | 0.35% |
+| memorable | 7.8472 | 0.34% |
+| fun run | 4.8223 | 0.21% |
+| exciting opportunity | 2.9225 | 0.13% |
+| skydiving | 1.7119 | 0.07% |
+| thrill | 1.6419 | 0.07% |
+| recreational activity | 0.4042 | 0.02% |
+| participate in | 0.0000 | 0.00% |
+| once in a lifetime | 0.0000 | 0.00% |
+| enjoyable experience | 0.0000 | 0.00% |
+
+### Stewardship
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| ensure | 435.3811 | 55.07% |
+| make sure | 164.4619 | 20.80% |
+| control | 59.8499 | 7.57% |
+| manage | 50.0695 | 6.33% |
+| responsibility | 48.5360 | 6.14% |
+| oversee | 7.7467 | 0.98% |
+| direct impact | 6.3044 | 0.80% |
+| transparency | 5.0207 | 0.64% |
+| trustworthy | 3.1356 | 0.40% |
+| allocate resources | 2.8795 | 0.36% |
+| efficiency | 2.5672 | 0.32% |
+| stewardship | 2.3153 | 0.29% |
+| accountability | 1.3871 | 0.18% |
+| maximum impact | 0.9651 | 0.12% |
+| efficient management | 0.0000 | 0.00% |
+| direct involvement | 0.0000 | 0.00% |
+| effective altruism | 0.0000 | 0.00% |
+| personally overseeing | 0.0000 | 0.00% |
+| utilize resources effectively | 0.0000 | 0.00% |
+| responsible giving | 0.0000 | 0.00% |
+| maximize effectiveness | 0.0000 | 0.00% |
+| ensure funds are used properly | 0.0000 | 0.00% |
+| maximizing impact | 0.0000 | 0.00% |
+| evidence-based | 0.0000 | 0.00% |
+| efficient use | 0.0000 | 0.00% |
+
+### Advocacy
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| raise awareness | 220.3063 | 37.75% |
+| policy | 88.0214 | 15.08% |
+| voice | 48.5761 | 8.32% |
+| advocacy | 40.4141 | 6.93% |
+| equality | 32.5197 | 5.57% |
+| advocate | 30.4755 | 5.22% |
+| human rights | 25.6932 | 4.40% |
+| urge | 23.9690 | 4.11% |
+| take action | 16.2814 | 2.79% |
+| reform | 13.3183 | 2.28% |
+| social justice | 11.3549 | 1.95% |
+| supporting cause | 11.1250 | 1.91% |
+| visibility | 5.7724 | 0.99% |
+| activism | 4.2091 | 0.72% |
+| marginalized | 4.0075 | 0.69% |
+| protest | 3.4013 | 0.58% |
+| petition | 1.7198 | 0.29% |
+| educate others | 1.4090 | 0.24% |
+| social movement | 0.9651 | 0.17% |
+| fight for | 0.0000 | 0.00% |
+| speak up | 0.0000 | 0.00% |
+| speak out | 0.0000 | 0.00% |
+| stand up for | 0.0000 | 0.00% |
+| make a difference | 0.0000 | 0.00% |
+| campaign for | 0.0000 | 0.00% |
+
+### Altruism and Empathy
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| save lives | 174.7705 | 38.69% |
+| change lives | 101.2748 | 22.42% |
+| kindness | 77.5274 | 17.16% |
+| give hope | 31.7277 | 7.02% |
+| selfless | 24.5356 | 5.43% |
+| bring hope | 19.9420 | 4.41% |
+| stand together | 7.6747 | 1.70% |
+| better lives | 4.8404 | 1.07% |
+| selflessness | 4.7221 | 1.05% |
+| relieve suffering | 4.7075 | 1.04% |
+| ease their pain | 0.0000 | 0.00% |
+| lend a hand | 0.0000 | 0.00% |
+| act of kindness | 0.0000 | 0.00% |
+| stand with them | 0.0000 | 0.00% |
+| care for others | 0.0000 | 0.00% |
+| for their sake | 0.0000 | 0.00% |
+| support those in need | 0.0000 | 0.00% |
+| no recognition | 0.0000 | 0.00% |
+| caring for others | 0.0000 | 0.00% |
+| pure giving | 0.0000 | 0.00% |
+| anonymous giving | 0.0000 | 0.00% |
+| be kind | 0.0000 | 0.00% |
+| empathic concern | 0.0000 | 0.00% |
+
+### Moral Obligation
+
+| Keyword | Contribution | % of Category |
+| --- | ---:| ---:|
+| humanity | 80.9857 | 18.69% |
+| help others | 65.3039 | 15.07% |
+| commitment | 60.3806 | 13.94% |
+| justice | 56.1240 | 12.95% |
+| compassion | 55.8916 | 12.90% |
+| compassionate | 38.5734 | 8.90% |
+| duty | 37.5465 | 8.67% |
+| moral | 15.4490 | 3.57% |
+| obligation | 7.0826 | 1.63% |
+| feel compelled | 4.7639 | 1.10% |
+| obliged | 4.4387 | 1.02% |
+| ethics | 3.2301 | 0.75% |
+| ethically | 3.0529 | 0.70% |
+| moral responsibility | 0.4624 | 0.11% |
+| faith-based duty | 0.0000 | 0.00% |
+| moral imperative | 0.0000 | 0.00% |
+| altruism | 0.0000 | 0.00% |
+| do the right thing | 0.0000 | 0.00% |
+| sense of duty | 0.0000 | 0.00% |
+| guided by faith | 0.0000 | 0.00% |
+| conscience | 0.0000 | 0.00% |
+| moral duty | 0.0000 | 0.00% |
